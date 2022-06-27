@@ -671,12 +671,18 @@ position: absolute;
         border-radius: 4px;
         color: #fff;
         padding-left:0px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
 }
 .newsletter-icon {
     position: absolute;
     width: 24px;
     height: 24px;
     margin-left: 20px;
+    margin-top: 4px;
 }
 .newsletter-input {
     width: 358px;
@@ -689,6 +695,9 @@ position: absolute;
         background: transparent;
         margin-right: 12px;
 }
+.newsletter-input:hover {
+    border: 1px solid #2196f3;
+}
 .form {
     display: flex;
     justify-content:flex-end;
@@ -700,3 +709,18 @@ position: absolute;
 .form-style {
     list-style: none;
 }
+  input:focus,
+  textarea:focus {
+      outline: none;
+  }
+  .form-group input:focus-within {
+    border-color: #2196f3;
+  }
+  .modal-form-contact:focus-within {
+    border-color: #2196f3;
+  }
+  .form-group label:focus-within {
+    fill: #2196F3;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
