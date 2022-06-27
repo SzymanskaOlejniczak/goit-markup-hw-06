@@ -1,6 +1,6 @@
 <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
  <defs>
- <symbol id="icon send" viewBox="0 0 32 32">
+ <symbol id="icon send" viewBox="0 0 24 24">
  <path d="M24 0 0 13.5l7.7 2.8 11.8-11-9 12V24l4.3-5 5.5 2L24 0Z" fill="#fff"/>
  </symbol>
  </defs>
