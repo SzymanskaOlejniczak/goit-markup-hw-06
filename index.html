@@ -347,24 +347,75 @@ non sodales dui. Interdum et malesuada</p>
                     </ul>
                 </div>
             </div>
-            <div>
-                <button class="newsletter-btn" type="submit">
-                Zapisz się
-                <svg class="newsletter-icon">
-                  <use href="/images/icon send.svg#icon send"></use>
-                </svg>
-              </button>
-            </div>
-
+                <div class="form">
+                    <ul class="form-style">
+                    <li><label for="useremail"><h3 class="newsletter-text">
+                        ZAPISZ SIĘ DO NEWSLETTERA</h3></label></li>
+                    <li><div class="useremail">
+                        <input class="newsletter-input" type="email" id="useremail" name="useremail" placeholder="E-mail" required=""/>
+                        <button class="newsletter-btn" type="submit">
+                        Zapisz się
+                        <svg class="newsletter-icon">
+                        <use href="/images/icon send.svg#icon send"></use>
+                        </svg>
+                        </button>
+                    </div>
+                    </li>
+                    </ul>
+                </div>
                 </section>     
         </footer>
         <div class="backdrop is-hidden"data-modal>
             <div class="modal">
                 <button type="button"data-modal-close>
                 <svg class="close-btn">
-            <use href="images/icons.svg#close-black"></use>
-        </svg>
-    </button>
+                    <use href="images/icons.svg#close-black"></use>
+                </svg>
+                </button>
+                <button type="button" class="close-btn2">
+                    <form class="modal-form" action="#" method="post">
+                        <input  class="modal-form-policy visually-hidden" id="user-policy" type="checkbox">
+                        <label for="user-policy" class="modal-form-policy-text">Oświadczam iż akceptuję
+                            <a href="#regulamin">Regulamin</a> i
+                            <a href="#politykaprywatności"> Politykę Prywatności.</a>
+                        </label>
+                    </form>
+                </button>
+                <form class="">
+                    <div class="form-group" role="group" aria-labelledby="contact-details-head">
+                        <h3 class="form-text" id="contact-details-head">
+                            Zostaw swoje dane w formularzu poniżej
+                        </h3>
+                        <label for="username" class="modal-form-label">
+                            Imie
+                            <svg class="modal-form-name">
+                                <use href="images/person-black.svg#person"></use>
+                            </svg>   
+                            <input class="modal-form-place" type="text" id="username" name="contact-details.username" required=""/>
+                        </label>
+                        <label for="userphone" class="modal-form-label">
+                            Telefon
+                            <svg class="modal-form-phone">
+                                <use href="images/phone.svg#phone"></use>
+                            </svg>
+                            <input class="modal-form-place" type="tel" id= "userphone" name="contact-details.phone_number" required=""/>
+                        </label>
+                        <label for="email" class="modal-form-label">
+                            Email
+                            <svg class="modal-form-email">
+                                <use href="images/email.svg#Email"></use>
+                            </svg>
+                        <input class="modal-form-place" type="email" id="email" name="contact-details.email" required=""/>
+                        </label>  
+                        <label for="contact" class="modal-form-label">
+                            Kontakt
+                            <textarea class="modal-form-contact" name="contact" id="contact" rows="8" placeholder="Wprowadź tekst"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <button class="modal-submit" type="submit">Wyślij</button>
+                    </div>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
